@@ -23,4 +23,8 @@ else if            => Se não
 ||                 => ou
 ! antes do $x      => Inverte o resultado
 empty              => Verifica variaveis vazias // $x = ""; // if(empty($x)) //
-
+for                => Repetição // for (inicialização;condição;atualização) { Açoes }
+++                 => Aumenta 1 unidade 
++= "algum numero"  => Aumenta somando unidade especificada
+--                 => Diminiu 1 unidade
+-= "algum numero"  => Diminui as unidades especificadas
