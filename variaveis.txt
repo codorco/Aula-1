@@ -8,6 +8,7 @@ print              => Exibir dados e texto, apenas uma String porem pode ser usa
 $                  => Variavel ($x = "aipim";) ($x = 10;) Sempre começar com letra depois do $
 true               => variavel logica = verdadeiro
 false              => variavel logica = falso
+()                 => Soma de variaveis entre parenteses serao realizadas primeiro
 
 
 
