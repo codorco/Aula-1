@@ -6,13 +6,18 @@ Comandos           /    Detalhes
 echo               => Exibir dados e texto ( permite mais argumentos dividos com "," (virgula)) Permite mais String / Tipo void, nao retorna nenhum valor quando usado como dado de alguma variavel $x
 print              => Exibir dados e texto, apenas uma String porem pode ser usado em variavel ($x = print "ola mundo";)
 $                  => Variavel ($x = "aipim";) ($x = 10;) Sempre começar com letra depois do $
-true               => variavel logica = verdadeiro
-false              => variavel logica = falso
+true               => Variavel logica = verdadeiro
+false              => Variavel logica = falso
 ()                 => Soma de variaveis entre parenteses serao realizadas primeiro
 >                  => Maior que
-<                  => menor que
-==                 => igual a
+<                  => Menor que
+==                 => Igual a
 >=                 => Maior ou igual a
-<=                 => menor ou igual a 
-!=                 => diferente
-
+<=                 => Menor ou igual a 
+!=                 => Diferente
+1 endiante...      => Verdadeiro
+0                  => Falso
+if(){instruçoes}   => Se? pergunta
+else if            => Se não
+&&                 => e
+||                 => ou
