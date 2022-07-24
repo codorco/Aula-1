@@ -141,6 +141,38 @@ for ($r= 1 ; $r <= 6 ; $r ++) {
 }
 
 
+##      ESTRUTURA DE REPETIÇÃO "FOR" com "Arraya"   ##
+
+                    #  0  ,   1  ,   2   ,    3      ,    4      ,      5       ; #
+$categorias = array ("FPS", "RPG", "Acão", "Aventura", "Simulção", "Plataforma");
+
+for ($c=0;$c < 6; $c ++) {
+    echo $categorias [$c]."<br>";
+}
+echo "loop executado com sucesso!<br><br>";
+
+##      DESIGNANDO OS INDICES  ##
+
+                        #            funcionario ,  0    ,   1   ,    2    ,    3   ,    4    ,    5    ,     6     ; #                       
+$funcionarios = array ("funcionario"=>"Gabriel", "Felipe", "Caio", "Marcos", "Bruno", "Flavio", "Albino", "silvio");
+    echo $funcionarios ["0"]."</br></br>"; 
+
+
+##      ESTRUTURA DE "Arraya"  ##
+
+                     #     0    ,   1   ,    2    ,    3   ,    4    ,    5    ,     6   ,    7     ; #                       
+$funcionario = array ("Gabriel", "Felipe", "Caio", "Marcos", "Bruno", "Flavio", "Albino", "silvio");
+    for ($f=0; $f < count($funcionario) ; $f++) {
+
+    echo "linha: $f $funcionario [$f] <br>"; 
+}
+
+
+
+
+
+
+
 
 
 
