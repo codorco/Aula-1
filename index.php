@@ -122,11 +122,23 @@ if ($key1 || $key2 || $key3 || $key4 || $key5) {
     }
 
 
+##      ESTRUTURA DE REPETIÇÃO "FOR"       ##
 
+for ($repete = 0 ;$repete < 10; $repete++) {
+    echo "$repete</br>";
+}
 
+##      ESTRUTURA DE REPETIÇÃO "FOR" com paravras   ##
 
+for ($r= 0 ; $r <10 ; $r ++) {
+    echo "ola mundo $r</br>";
+}
 
+##      ESTRUTURA DE REPETIÇÃO "FOR" com titulos diminuindo   ##
 
+for ($r= 1 ; $r <= 6 ; $r ++) {
+    echo "<h$r>Titulo de nivel $r</h$r></br>";
+}
 
 
 
