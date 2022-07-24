@@ -28,3 +28,5 @@ for                => Repetição // for (inicialização;condição;atualizaç�
 += "algum numero"  => Aumenta somando unidade especificada
 --                 => Diminiu 1 unidade
 -= "algum numero"  => Diminui as unidades especificadas
+array              => Coleçao // $valores = arrays("FPS", "RPG", "Açao"); //
+count              => Conta os valores dentro dos "array"
