@@ -32,8 +32,8 @@ array              => Coleçao // $valores = arrays("FPS", "RPG", "Açao"); //
 count              => Conta os valores dentro dos "array"
 while              => Repetiçao infinitas até a condiçao ser sanada.
 do {} While        => Primeiro mostra a mensagem depois inicia o loop
-
-
+foreach ($ as $)   => Lista todos os valores de uma variavel
+var_dump           => Ver oque tem dentro de um array
 
 
 
