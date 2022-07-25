@@ -30,3 +30,18 @@ for                => Repetição // for (inicialização;condição;atualizaç�
 -= "algum numero"  => Diminui as unidades especificadas
 array              => Coleçao // $valores = arrays("FPS", "RPG", "Açao"); //
 count              => Conta os valores dentro dos "array"
+while              => Repetiçao infinitas até a condiçao ser sanada.
+do {} While        => Primeiro mostra a mensagem depois inicia o loop
+
+
+
+
+
+
+
+
+
+
+
+
+

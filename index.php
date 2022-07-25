@@ -4,18 +4,24 @@ $salario = 1500;
 $aumento = 6/100;
 $novosalario = ($salario * $aumento) + $salario;
 
-echo "salario inicial: $salario</br>";
-echo "taxa para aumento: $aumento</br>";
-echo "novo salario: $novosalario</br>"; 
+echo "salario inicial: $salario<br>";
+echo "taxa para aumento: $aumento<br>";
+echo "novo salario: $novosalario<br>";
+
+
+echo " <br>";
 
 
 #       TESTE DE VARIAVEL "IF"
 
 if (1>0) {
-    echo "verdadeiro </br>";
+    echo "verdadeiro <br>";
 }   else {
-    echo "falso </br>";
+    echo "falso <br>";
+
 } # Resultado > verdadeiro
+
+echo " <br>";
 
 ##       TESTE DE VARIAVEL "IF" 2      ##
 
@@ -24,7 +30,10 @@ IF ($idade > 17) {
     echo "maior de idade</br>";
 }   else {
     echo "menor de idade</br>";
+    
 } # Resultado > Maior de idade
+
+echo " <br>";
 
 $valor = 1;
 if ($valor == false ) {
@@ -32,6 +41,8 @@ if ($valor == false ) {
 }   else {
     echo "falso</br>";
 }
+
+echo " <br>";
 
 ##       TESTE DE VARIAVEL "IF3"     ##
 
@@ -50,6 +61,8 @@ if ($chaveporta == $porta) {
 }   else {
     echo "sua chave nao abre a porta</br>";
 }
+
+echo " <br>";
 
 ##     TESTE DE VARIAVEL "ABRINDO PORTAS COM VARIAS CHAVES"       ##
 
@@ -74,6 +87,8 @@ if ($chave1 == $porta) {
     echo "a chave não abriu a porta</br>";
 } 
 
+echo " <br>";
+
 ##     TESTE DE OPERADORES LOGICOS BOOLEANOS       ##
 
 $nota = 5;
@@ -85,6 +100,8 @@ if ($nota >= 5 && $presenca >= 10 && $atividade >= 15) {
 }   else { 
     echo   "aluno reprovado</br>";
 }
+
+echo " <br>";
 
 ##      TESTE 2 "verificaçoes separadas"         ##
 
@@ -106,6 +123,8 @@ if ($nota2 >= 5) {
     echo "aluno reprovado na nota</br>";
 }
 
+echo " <br>";
+
 ##      ESTRUTURA DE DECISÕES ||        ##
 
 $key1 = true;
@@ -121,6 +140,7 @@ if ($key1 || $key2 || $key3 || $key4 || $key5) {
     echo "Nenhuma das chaves abriu a porta</br>";
     }
 
+echo " <br>";
 
 ##      ESTRUTURA DE REPETIÇÃO "FOR"       ##
 
@@ -164,8 +184,49 @@ $funcionarios = array ("funcionario"=>"Gabriel", "Felipe", "Caio", "Marcos", "Br
 $funcionario = array ("Gabriel", "Felipe", "Caio", "Marcos", "Bruno", "Flavio", "Albino", "silvio");
     for ($f=0; $f < count($funcionario) ; $f++) {
 
-    echo "linha: $f $funcionario [$f] <br>"; 
+    echo "Linha: $f $funcionario[$f] <br>"; 
 }
+
+echo "<br>";
+
+##      ESTRUTURA DE REPETIÇAO "While"  ##
+
+$coisa = 0;
+
+while ($coisa < 3) {
+    echo "ola mundo $coisa <br>";
+    $coisa ++;
+
+}
+
+echo "<br>";
+
+##      ESTRUTURA DE REPETIÇAO "While" invertido  ##
+
+$coisa2 = array ("Rato", "Barata", "canudo", "aipim", "bola");
+$c1 = count($coisa2)-1;
+
+while ($c1 >= 0) {
+    echo "Nomes: $coisa2[$c1] <br>";
+    $c1--;
+}
+
+echo "<br>";
+
+##      ESTRUTURA DE REPETIÇAO "do{}While"   ##
+
+
+$tentativa = 1;
+
+do{
+    echo "Tentei conversar $tentativa Vez <br>";
+    $tentativa ++;
+} while ($tentativa <4);
+
+
+
+
+
 
 
 
