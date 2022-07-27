@@ -193,8 +193,8 @@ echo "<br>";
                      #     0    ,   1   ,    2    ,    3   ,    4    ,    5    ,     6   ,    7     ; #                       
 $funcionario = array ("Gabriel", "Felipe", "Caio", "Marcos", "Bruno", "Flavio", "Albino", "silvio");
     for ($f=0; $f < count($funcionario) ; $f++) {
-
-    echo "Linha: $f $funcionario[$f] <br>"; 
+    $x = $f+1;
+    echo "Linha = $x $funcionario[$f] <br>"; 
 }
 
 echo "<br>";
@@ -304,7 +304,71 @@ echo "<br>";
     }
 }
 echo "<br>";
+echo "<h1>Teste de variaveis 'FOR com links'</h1>";
 
+##      Teste de variaveis 'FOR com links'   ##
+
+
+$urls = array ("pagina1.php", "pagina2.php", "pagina3.php", "pagina4.php"); 
+    for ($y = 0; $y < count($urls) ; $y++){
+    $x = $y+1;
+    echo "<a href=$urls[$y] title=$urls[$y] >Pagina $x</a><br>";
+}
+
+echo "<br>";
+echo "<h1>Teste de variaveis 'FOR com Imagem'</h1>";
+##      Teste de variaveis 'FOR com Imagem'   ##
+
+$img = array ("01-user.svg", "02-backandfortharrow.svg", "03-note.svg", "04-favorite.svg", "05-pin.svg", "06-mouse.svg"); 
+ for ($i = 0; $i < count($img); $i++){
+    echo "<img src=img/$img[$i] width=100 height=auto><br>";
+
+}
+
+
+echo "<br>";
+echo "<h1>Teste de variaveis 'array bidimensional com FOR' Nome indice</h1>";
+##      Teste de variaveis 'array bidimensional com FOR'   ##
+
+$b = array (
+"codigo" => array (10,20,30),
+"curso" =>array ("curso de php", "modelagem 3D", "Godot Engine"),
+"duracao" =>array ("10 aulas","30 aulas", "50 aulas"),
+);
+
+echo $b["codigo"][1]."<br>";
+
+
+echo "<br>";
+
+##      Teste de variaveis 'array bidimensional com FOR'   ##
+
+$a = array (
+array (10,20,30,40),
+array ("curso de php", "modelagem 3D", "Godot Engine","GD"),
+array ("10 aulas","30 aulas", "50 aulas", "60 aulas"),
+);
+
+for ($c = 0;$c < 3; $c++){
+    for ($l =0;$l < 4; $l++){
+        echo $a[$c][$l]."<br>";
+    }
+    echo "<hr>";
+}
+echo "<br>";
+echo "<h1>Teste de variaveis 'array bidimensional com while' </h1>";
+##      Teste de variaveis 'array bidimensional com FOR'   ##
+
+$c = 0;
+while ($c <3){
+    $l =0;
+    while ($l < 4){
+        echo $a[$c][$l]."<br>";
+        $l++;
+    }
+    echo "<hr>";
+    $c++;
+}
 
 
 ?>
