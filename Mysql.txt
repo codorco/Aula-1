@@ -1,0 +1,20 @@
+create table tb_user(
+    id int(5) auto_increment primary key,
+    nome varchar (60) not null,
+    email varchar(60) not null,
+    senha varchar (30) not null
+    );
+
+#########################
+
+
+insert into tb_user(nome,email,senha)VALUES
+('Emerson William','codorco@hotmail.com','123456789'),
+('Codorco','codorco@codorco.com','123456789');
+
+
+##########################
+
+select * from tb_user;
+
+##########################
