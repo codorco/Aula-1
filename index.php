@@ -369,6 +369,116 @@ while ($c <3){
     echo "<hr>";
     $c++;
 }
+echo "<br>";
+echo "<h1>Teste de variaveis 'Function' </h1>";
+##      Teste de variaveis 'Function'   ##
+
+function mostrar_texto (){
+echo "como criar um function<br>";
+
+}
+
+mostrar_texto();
+
+echo "<br>";
+##      Teste de variaveis 'Function com entradas'   ##
+
+function mostrar ($texto){ //parametro
+    echo "Bem vindo a aula $texto"; 
+    
+}
+    
+mostrar("2<br>"); //argumento
+
+echo "<br>";
+##      Teste de variaveis 'Function com entradas 2'   ##
+
+
+function mostrar2 ($aula){ //parametro
+    if ($aula == 10) {
+        echo "Chegamos ao final do modulo V";
+    }   else {
+        echo "Bem vindo a aula $aula sobre php"; 
+        } 
+    
+}
+    
+mostrar2("10"); //argumento
+echo "<br>";
+
+function tabuadas ($tab, $ini, $fim) {
+    for ($ini;$ini <= $fim;$ini++){
+        echo "$tab X $ini = " . $tab * $ini . "<br>";
+    }
+
+}
+
+tabuadas(2,1,10);
+
+echo "<br>";
+echo "<h1>Teste de funçao se conectando ao Mysql </h1>";
+##      Teste de funçao se conectando ao Mysql   ##
+
+conn ("db1","Henrique Silva","Henrique@gmail.com",152153);
+
+
+function conn ($banco,$user,$email,$senha) {
+    try{
+        $pdo = new PDO("mysql:dbname=$banco;host=localhost","root","");
+        echo "conectado ao servidor!";
+    }   catch (Exception $e) {
+            echo "Não deu muito certo". $e->getMessage();
+        } 
+
+       // INSERIR DADOS NO CAMPO  // 
+       /*
+       $pdo->  query("insert into tb_user(Nome, Email, Senha) VALUES
+                    ('$user','$email','$senha')"); */ 
+
+        echo "Aula 7 Sobre function<br>";
+       
+       /*   // FUNÇAO SELECT, ver o banco //
+
+        $registro = $pdo->prepare("SELECT * FROM tb_user where id = :id");
+        $registro->bindValue(":id",1);
+        $registro->execute();
+
+        $campos = $registro->fetch(PDO::FETCH_ASSOC);
+        foreach($campos as $key => $value){
+            echo "$key: $value <br> ";
+        } 
+        */
+
+        /*   EXLUIR DADOS DO BANCO 
+        $excluir = $pdo->prepare("DELETE FROM tb_user WHERE id = :id");
+        $excluir-> bindValue(":id",4);
+        $excluir-> execute(); 
+        */
+
+        /*   EXLUIR DIRETO OS DADOS DO BANCO  
+        $excluir = $pdo->query("DELETE FROM tb_user WHERE   ID ='3'");
+        */
+
+        /*   UPDATE DO DADOS DO BANCO  
+
+        $up = $pdo->prepare("UPDATE tb_user SET nome = :n WHERE id = :id");
+        $up->bindValue("n","kathoro");
+        $up->bindValue(":id",2);
+        $up->execute();*/
+
+        /* UPDATE DO DADOS DO BANCO DIRETO
+        $up = $pdo->query("UPDATE tb_user SET nome ='Codorco' WHERE id= '2'");
+        */
+
+    function somar ($num1, $num2) {
+        return $num1 + $num2;
+    }
+    $saida = somar(10,20);
+    echo "saida ". $saida;
+}
+   
+    
+
 
 
 ?>

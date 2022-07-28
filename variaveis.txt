@@ -34,6 +34,10 @@ while              => Repetiçao infinitas até a condiçao ser sanada.
 do {} While        => Primeiro mostra a mensagem depois inicia o loop
 foreach ($ as $)   => Lista todos os valores de uma variavel
 var_dump           => Ver oque tem dentro de um array
+function           => Chama uma funçao que pode um conjunto de açoes dentro
+mkdir( NOME ) =>   => Cria uma pasta no diretorio do .php com o nome designado   // mkdir ("diretorio/NOME_DA_PASTA"); para pasta dentro de pasta
+
+
 
 
 
