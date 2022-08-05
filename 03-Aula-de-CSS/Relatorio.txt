@@ -5,6 +5,10 @@ height                  => Tamanho altura
 min-width               => Vem todo aberto e tem tamanho minimo para ser fechado
 max-width               => Vem todo aberto na largura e tem tamanho maximo para ser aberto
 margin                  => Margem externa
+<<<<<<< HEAD
+=======
+*{margin: 0;}           => Tudo fica sem margem
+>>>>>>> 5821f73fd5a6855b5ec5522c1998bbb27009c1c1
 font-size               => Tamanho da fonte
 padding                 => Margem interna
 color                   => Cor da fonte ou objeto
@@ -17,3 +21,7 @@ position: absolute;     => A div vai se posicionar de acordo com o inicio do sit
 position: fixed;        => A div vai se posicionar fixo acompanhando a pagina
 float: left e right;    => Faz os objetos ir para a esquerda ou direita
 float: inherit;         => Vai herdar a float do div pai
+<<<<<<< HEAD
+=======
+float: none;            => não herda 
+>>>>>>> 5821f73fd5a6855b5ec5522c1998bbb27009c1c1
