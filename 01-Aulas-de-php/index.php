@@ -415,15 +415,17 @@ function tabuadas ($tab, $ini, $fim) {
 
 tabuadas(2,1,10);
 
+/*
 echo "<br>";
 echo "<h1>Teste de funçao se conectando ao Mysql </h1>";
 ##      Teste de funçao se conectando ao Mysql   ##
 
-conn ("db1","Henrique Silva","Henrique@gmail.com",152153);
+con ("db1","Henrique Silva","Henrique@gmail.com",152153);
 
 
-function conn ($banco,$user,$email,$senha) {
-    try{
+
+ function conn ($banco,$user,$email,$senha) {
+     try{
         $pdo = new PDO("mysql:dbname=$banco;host=localhost","root","");
         echo "conectado ao servidor!";
     }   catch (Exception $e) {
@@ -431,13 +433,13 @@ function conn ($banco,$user,$email,$senha) {
         } 
 
        // INSERIR DADOS NO CAMPO  // 
-       /*
+       
        $pdo->  query("insert into tb_user(Nome, Email, Senha) VALUES
-                    ('$user','$email','$senha')"); */ 
+                    ('$user','$email','$senha')");  
 
         echo "Aula 7 Sobre function<br>";
        
-       /*   // FUNÇAO SELECT, ver o banco //
+         // FUNÇAO SELECT, ver o banco //
 
         $registro = $pdo->prepare("SELECT * FROM tb_user where id = :id");
         $registro->bindValue(":id",1);
@@ -447,35 +449,35 @@ function conn ($banco,$user,$email,$senha) {
         foreach($campos as $key => $value){
             echo "$key: $value <br> ";
         } 
-        */
+        
 
-        /*   EXLUIR DADOS DO BANCO 
+           EXLUIR DADOS DO BANCO 
         $excluir = $pdo->prepare("DELETE FROM tb_user WHERE id = :id");
         $excluir-> bindValue(":id",4);
         $excluir-> execute(); 
-        */
+        
 
-        /*   EXLUIR DIRETO OS DADOS DO BANCO  
+           EXLUIR DIRETO OS DADOS DO BANCO  
         $excluir = $pdo->query("DELETE FROM tb_user WHERE   ID ='3'");
-        */
+        
 
-        /*   UPDATE DO DADOS DO BANCO  
+           UPDATE DO DADOS DO BANCO  
 
         $up = $pdo->prepare("UPDATE tb_user SET nome = :n WHERE id = :id");
         $up->bindValue("n","kathoro");
         $up->bindValue(":id",2);
-        $up->execute();*/
+        $up->execute();
 
-        /* UPDATE DO DADOS DO BANCO DIRETO
+         UPDATE DO DADOS DO BANCO DIRETO
         $up = $pdo->query("UPDATE tb_user SET nome ='Codorco' WHERE id= '2'");
-        */
+        
 
     function somar ($num1, $num2) {
         return $num1 + $num2;
     }
     $saida = somar(10,20);
     echo "saida ". $saida;
-}
+} */
    
     
 
