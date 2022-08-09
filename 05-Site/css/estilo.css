@@ -1,0 +1,64 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {          /*-- BUDY --*/
+    background-color: #fcfcfc;
+    color: rgba(0,0,0,.87);
+    background-image: url(../img/bg001.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container{          /*-- PRINCIPAL --*/
+max-width: 1350px;
+height: 800px;
+margin: 0 auto;
+display: block;
+overflow: hidden;
+position: relative;
+}
+.main-container {
+    background-color: burlywood;
+    padding: 20px;
+    margin: 80px 3px 50px 3px;
+}
+
+.login-container{          /*-- PRINCIPAL --*/
+max-width: 800px;
+height: 800px;
+margin: 0 auto;
+display: block;
+overflow: hidden;
+position: relative;
+}
+.login {
+background-color: burlywood;
+padding: 20px;
+margin: 80px 3px 50px 3px;
+}
+
+
+
+#topo{          /*-- TOPO NAV --*/
+background-color: #2e2c2c;
+overflow: hidden;
+width: 100%;
+margin: 0;
+padding: 0;
+border-top: 4px solid #0Af;
+height: 75px;
+box-shadow:0 0 1em rgba(0,0,0,1);
+}
+
+#topo figure {         /*-- TOPO Banner--*/
+    margin-left: 150px;
+}
+#topo figure img {         /*-- TOPO Banner config--*/
+    width: 230px;
+    height: auto;
+}
+
