@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="css/estilo.css"> <!-- CSS da pagina -->
 </head>
 <body> <!-- Seção principal do site -->
-    <div id="principal">
-            <header id="topo"> <!-- Topo do site -->
-                <?php include "topo.php"; ?>  
-            </header>
+    <section id="form">
+            <form action="login.php" method="post">
+                <label> 
+                Login:
+                </label>
+                    <input type="text" name="login" placeholder="Digite o seu Email" class="entradas"><br>
+                <label>
+                    Senha:
+                </label>
+                <input type="password" name="senha" placeholder="Digite a sua Senha" class="entradas"><br>
+                <label>
+                    <input type="submit" value="logar" class="bt_form">
+                </label>
+            </form>
+          
+            <a href="cadastre.php">Novo Usuario</a>
+            
+           
 
-
-            <main id="conteudo"> <!-- Conteudo do site -->   
-                <?php include "conteudo.php"; ?>      
-            </main>
-
-
-            <footer id="rodape"> <!-- Rodapé do site -->    
-                <?php include "rodape.php"; ?> 
-            </footer>
-    </div>
-
+    </section>
+        
 </body>
 </html>
