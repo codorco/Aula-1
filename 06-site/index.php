@@ -13,11 +13,11 @@
                 <label> 
                 Login:
                 </label>
-                    <input type="text" name="login" placeholder="Digite o seu Email" class="entradas"><br>
+                    <input type="text" name="login" placeholder="Digite o seu Email" class="entradas" required><br>
                 <label>
                     Senha:
                 </label>
-                <input type="password" name="senha" placeholder="Digite a sua Senha" class="entradas"><br>
+                <input type="password" name="senha" placeholder="Digite a sua Senha" class="entradas" required><br>
                 <label>
                     <input type="submit" value="logar" class="bt_form">
                 </label>

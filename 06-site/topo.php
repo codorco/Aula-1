@@ -1,8 +1,8 @@
 <header>
-    <h1>CODORÇO</h1>
+    <h1><?php echo $nome_log; ?></h1>
 </header>
 <figure>
-    <img src="img/foto.png">
+    <img src=" <?php echo "users/$email_log/$perfil_log"; ?> ">
     
 </figure>
 <nav>

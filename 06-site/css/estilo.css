@@ -21,6 +21,7 @@ body{
     z-index: 10; /* Camadas */
 }
 #topo figure img{
+    border-radius: 100px;
     width: 200px;
     height: auto;
     float: left;

@@ -5,8 +5,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $dica = $_POST['dica'];
 $cadastrar = false;
-
-
+$voltar ="<a href='cadastre.php'>Voltar ao cadastro</a>";
 
 # arquivos de upload
 $capa = $_FILES['capa']['name'];
@@ -22,11 +21,11 @@ $pasta = $email;
 # 1° VERIFICAÇAO (PASTA)
 if(file_exists("users/".$pasta)){
     echo "Você ja possui um email cadastrado<br>";
-    echo"<a href='cadastre.php'>Voltar ao cadastro</a>";
+    print $voltar;
 } else {
 
 # 2° VERIFICAÇAO (CAMPOS)
-        if($nome !="" && $email =="" && $senha !="" && $dica !="" && $capa !="" && $perfil !=""){
+            if($nome !="" && $email !="" && $senha !="" && $dica !="" && $capa !="" && $perfil !=""){
             $cadastrar = true;
 
 
@@ -40,16 +39,18 @@ if(file_exists("users/".$pasta)){
 # ENVIANDO PRO DB
                 $sql = "INSERT INTO tb_user (nome,email,senha,dica,perfil,capa)VALUES('$nome','$email','$senha','$dica','$perfil','$capa');";
                 mysqli_query($link, $sql);
-                echo "<a href='cadastre.php'>Cadastrar outro usuario</a><br>";
+
+                echo "Cadastro feito com sucesso!<br>";
+                echo "<a href='login.php'>Ir para tela de Login</a><br>";
                  } else {
                 echo "Erro no cadastro";
-                echo"<a href='cadastre.php'>Voltar ao cadastro</a>";
+                print $voltar;
                 }
 
 
         } else {
             echo "Você deixou algum campo vazio<br>";
-            echo"<a href='cadastre.php'>Voltar ao cadastro</a>";
+            print $voltar;
         }
 }
 

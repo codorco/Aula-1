@@ -1,3 +1,7 @@
+<?php
+include "verifica_login.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +13,7 @@
 </head>
 <body> <!-- Seção principal do site -->
     <div id="principal">
-            <section id="topo"> <!-- Topo do site -->
+            <section id="topo" style="background-image:url(<?php echo "users/$email_log/$capa_log";?>); background-size:cover;"> <!-- Topo do site -->
                 <?php include "topo.php"; ?>  
             </section>
 
