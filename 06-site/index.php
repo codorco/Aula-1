@@ -1,3 +1,19 @@
+<?php
+#INCLUIR A CONEXAO
+include "connect.php";
+
+#RECUPERAR A SESSAO
+session_start(); 
+
+#VERIFICAR E MANDAR DE VOLTA CASO LOGADO
+if(isset($_SESSION['login_user'])&& isset($_SESSION["senha_user"])) {
+    header('location:user.php');
+}   else {
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

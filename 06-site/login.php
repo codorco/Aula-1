@@ -1,16 +1,16 @@
 <?php
 include "connect.php";
 
-session_start();
 
+# ATRIBUI OS VALORES
 $login = $_POST["login"];
 $senha = $_POST["senha"];
 
 
-$_SESSION['login_user'] = $login;
-$_SESSION['senha_user'] = $senha;
 
-if(isset($_SESSION['login_user']) && isset($_SESSION['senha_user'])) {
+
+
+if($login && $senha) {
     $sql = mysqli_query($link, "select * from tb_user WHERE email = '$login'");
          while($dados = mysqli_fetch_array($sql)) {
             $email = $dados['email'];
@@ -18,7 +18,16 @@ if(isset($_SESSION['login_user']) && isset($_SESSION['senha_user'])) {
          }
         
          if($login == $email && $senha == $pass){
+
+            #LOGA NA SESSAO
+            session_start();
+
+            $_SESSION['login_user'] = $login;
+            $_SESSION['senha_user'] = $senha;
+
+            #DIRECIONA PARA O USER.PHP
             header('location:user.php');
+
          } else {
             header('location:index.php');
          }
