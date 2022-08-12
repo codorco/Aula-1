@@ -11,6 +11,7 @@ $s= isset($_SESSION["senha_user"])?$_SESSION["senha_user"]:"";
 if($l != "" && $s != ""){
     $dados = mysqli_query($link, "select * from tb_user WHERE email = '$l'");
     while($d = mysqli_fetch_array($dados)) {
+        $id_log = $d['id'];
         $nome_log = $d['nome'];
         $email_log = $d['email'];
         $senha_log = $d['senha'];

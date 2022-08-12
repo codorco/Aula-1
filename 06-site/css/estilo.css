@@ -133,9 +133,23 @@ background-color: #0af;
     float: left;
 }
 
-.dados,h1{
+.dados,h1, .posts{
 margin-left:20px;
 
+}
+/* ICONES DAS POSTEGENS */
+.img_posts{
+    height: 25px;
+    width: auto;
+    margin: 2px;
+    border: 0px solid red;
+    position: relative;
+    top: 10px;
+    transition: 0.3s;
+    opacity: 0.7;
+}
+.img_posts:hover{
+    opacity: 1;
 }
 
 /* formulario da pagina index*/
