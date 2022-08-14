@@ -14,7 +14,16 @@ include "verifica_login.php";
 </head>
 <body> <!-- Seção principal do site -->
     <div id="principal">
-            <section id="topo" style="background-image:url(<?php echo "users/$email_log/$capa_log";?>); background-size:cover;"> <!-- Topo do site -->
+            <section id="topo" style="background-image:url(<?php
+                ## VERIFICANDO SE A CAPA FOI REMOVIDA PARA ESCOLHER A FOTO CERTA DE BANNER
+                if($capa_log != "capa.jpg"){
+                    echo "users/$email_log/$capa_log";
+                } else {
+                    echo "img/$capa_log";
+                }
+             
+             
+             ?>); background-size:cover;"> <!-- Topo do site -->
                 <?php include "topo.php"; ?>  
             </section>
 
