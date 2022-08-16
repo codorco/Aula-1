@@ -38,7 +38,7 @@ if(isset($_SESSION['login_user'])&& isset($_SESSION["senha_user"])) {
                     <input type="submit" value="logar" class="bt_form">
                 </label>
             </form>
-          
+            <a href="redefinir_senha.php">Esqueci a senha</a>
             <a href="cadastre.php">Novo Usuario</a>
             
            
